@@ -31,6 +31,10 @@ html {
     color: white!important;
 }
 
+.open {
+    display: flex!important;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -249,7 +253,7 @@ html {
     margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn {
+.ticket-buy-btn {
     display: block;
     margin-top: 11px;
     background-color: #000;
@@ -258,13 +262,89 @@ html {
     padding: 8px 16px;
     width: fit-content;
 }
-.place-buy-btn:hover{
+.ticket-buy-btn:hover{
     opacity : 0.5;
 }
 
 /* end Place section */
 
 /* end Tour section */
+
+.modal {
+    display: none;
+    background-color:rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header{
+    font-size: 30px;
+    width: 568px;
+    text-align: center;
+    background-color: #009688;
+    color: #fff;
+    padding: 50px 40px ;
+}
+.modal-header .fa-suitcase{
+    margin-right: 16px;
+}
+.modal-container {
+    background-color: #fff;
+    position: relative;
+}
+.modal-body{
+    padding: 15px;
+}
+.modal-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-input {
+    margin-bottom: 26px;
+    width: 100%;
+    padding: 8px;
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.modal-btn:hover{
+    background-color: #f44336;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px;
+    cursor: pointer;
+    color: #fff;
+}
+.modal-close:hover{
+    background-color: #f44336;
+}
+.modal-footer{
+    text-align: right;
+    margin: 15px;
+    font-size: 15px;
+}
+.modal-footer a{
+    color: #2196F3;
+}
 
 #footer {
 
